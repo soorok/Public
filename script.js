@@ -8,7 +8,7 @@ async function calculateExchange() {
     }
 
     try {
-        const response = await fetch('https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/KRW');
+        const response = await fetch('https://v6.exchangerate-api.com/v6/be105e214ab2683314468776/latest/KRW');
         const data = await response.json();
         const rate = data.conversion_rates.JPY;
         const convertedAmount = (amount * rate).toFixed(2);
