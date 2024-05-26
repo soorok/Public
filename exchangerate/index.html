@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>환율 계산기</h1>
+    <div>
+        <label for="amount">원화 금액 (KRW):</label>
+        <input type="number" id="amount" placeholder="금액 입력">
+    </div>
+    <button onclick="calculateExchange()">환율 계산</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
